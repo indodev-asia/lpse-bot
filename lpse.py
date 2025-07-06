@@ -47,8 +47,7 @@ lpse[21] = "https://lpse.tangerangkota.go.id/eproc4/lelang"
 lpse[22] = "https://lpse.jakarta.go.id/eproc4/lelang"
 lpse[23] = "https://lpse.tangerangkab.go.id/eproc4/lelang"
 lpse[24] = "https://eproc.kotabogor.go.id/eproc4/lelang"
-
-
+    
 keywords = ["aplikasi", "web", "server", "komputer", "software", "sistem informasi", "fids", "bandar udara"]
 
 def RandomUa():
@@ -75,7 +74,7 @@ def InitLpse():
         opts = webdriver.ChromeOptions()
         opts.add_argument('headless')
         opts.add_argument('--user-agent=' + ua)
-        driver = webdriver.Chrome(chrome_options=opts)
+        driver = webdriver.Chrome(options=opts)
 
         return driver
 
